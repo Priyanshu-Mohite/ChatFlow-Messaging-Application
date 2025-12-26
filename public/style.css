@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ece5dd;
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #075e54;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.chat-card {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.chat-header {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.from {
+    font-weight: bold;
+    color: #075e54;
+}
+
+.to {
+    font-weight: bold;
+    color: #128c7e;
+}
+
+.arrow {
+    margin: 0 6px;
+}
+
+.msg {
+    background-color: #dcf8c6;
+    padding: 10px 14px;
+    border-radius: 12px;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 15px;
+    color: #111;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.new-chat-btn {
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.new-chat-btn:hover {
+    background-color: #1ebe5d;
+}
+
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-form input,
+.chat-form textarea {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.chat-form input:focus,
+.chat-form textarea:focus {
+    border-color: #25d366;
+}
+
+.chat-form textarea {
+    resize: none;
+}
+
+.new-chat-btn {
+    background-color: #25d366;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.time {
+    margin-top: 6px;
+    text-align: right;
+}
+
+.time small {
+    font-size: 12px;
+    color: #373c3f;              /* WhatsApp grey */
+    background-color: #f0f2f5;   /* soft background */
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+
+.chat-actions {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.edit-btn {
+    font-size: 12px;
+    color: #373c3f;
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background-color: #f0f2f5;
+}
+
+.edit-btn:hover {
+    background-color: #c4c7cf;
+}
+
+
+.delete-btn {
+    font-size: 12px;
+    color: #a4262c;              /* red text */
+    background-color: #e8a8a8;   /* light red bg */
+    border: none;
+    padding: 2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #f8d7da;
+}
+
+

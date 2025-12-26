@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h2 class="title">All Chats</h2>
+
+    <div class="top-bar">
+        <form method="GET" action="/chats/new">
+            <button class="new-chat-btn">+ New Chat</button>
+        </form>
+    </div>
+
+
+    <div class="chat-container">
+        <% for(let chat of chats) { %>
+            <div class="chat-card">
+                <div class="chat-header">
+                    <span class="from"><%= chat.from %></span>
+                    <span class="arrow">→</span>
+                    <span class="to"><%= chat.to %></span>
+                </div>
+
+                <div class="msg">
+                    <%= chat.msg %>
+                </div>
+
+                <div class="chat-actions">
+                    <a href="/chats/<%= chat._id %>/edit" class="edit-btn">Edit</a>
+                </div>
+
+                <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE" class="chat-actions">
+                    <button class="delete-btn">Delete</button>
+                </form>
+
+                                    
+                <div class="time">
+                    <small>
+                        <%= chat.created_at.toString().split(" ").slice(0, 4).join(" ") %>
+                        •
+                        <%= chat.created_at.toString().split(" ")[4] %>
+                    </small>
+                </div>
+
+            </div>
+        <% } %>
+    </div>
+
+</body>
+</html>
