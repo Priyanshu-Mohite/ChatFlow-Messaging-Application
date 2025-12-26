@@ -1,25 +1,25 @@
 # ChatFlow Messaging Application
 
-A simple chat application built using Node.js, Express, EJS, and MongoDB.
-
----
+A simple chat application built using Node.js, Express, and MongoDB.
 
 ## Features
 - Create and manage chat messages
-- CRUD operations on chats
+- Perform CRUD operations
 - Server-side rendering using EJS
-- MongoDB database integration
-
----
 
 ## Tech Stack
 - Node.js
 - Express.js
 - MongoDB
-- Mongoose
 - EJS
 - HTML, CSS
 
----
+## How to Run
+1. Install dependencies  
+   npm install  
 
-## Project Structure
+2. Start the server  
+   node index.js  
+
+## Author
+Priyanshu Mohite
